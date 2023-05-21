@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.top img {
+  height: 50px;
+  margin-right: auto;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-wrap {
+  margin: 0 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(229, 231, 220, 0.1);
+  width: 40%;
+  display: block;
+  margin: auto;
+}
+
+.box-wrap h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+.box-wrap label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.box-wrap input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(241, 243, 207, 0);
+}
+
+.box-wrap button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.box-wrap button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.box-wrap p {
+  font-size: 12px;
+  margin-top: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.box-wrap a {
+  color: #4caf50;
+}
+
+.box-wrap a:hover {
+  color: #3e8e41;
+}

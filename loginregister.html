@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login and Register Page</title>
+    <link rel="stylesheet" href="styles/loginorreg.css" />
+    <script src="js.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top">
+        <img src="banklogo.jpg" alt="Logo" />
+      </div>
+      <div class="bottom">
+        <div class="box-wrap">
+          <h2>Register</h2>
+          <form action="#">
+            <label for="Firstname">Fisrt Name:</label>
+            <input type="Firstname" id="Firstname" name="Firstname" required />
+
+            <label for="Lastname">Last Name:</label>
+            <input type="Lastname" id="Lastname" name="Lastname" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+            <button type="submit">Register</button>
+          </form>
+          <p>Already have an account? <a href="#">Login here</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
