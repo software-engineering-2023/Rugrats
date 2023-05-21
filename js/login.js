@@ -97,3 +97,104 @@ function authenticateLogin(username, password) {
   alert("Invalid username");
   return -1;
 }
+  .money {
+    content: url("https://w7.pngwing.com/pngs/251/257/png-transparent-ancient-egypt-egyptian-pound-bi-metallic-coin-egyptian-culture-medal-egypt-world.png");
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+  }
+  .money:nth-child(1) {
+    opacity: 0.6064;
+    transform: translate(56.5936vw, -10px) scale(0.1606);
+    animation: fall-1 22s -16s linear infinite;
+  }
+  @keyframes fall-1 {
+    34.585% {
+      transform: translate(57.9903vw, 34.585vh) scale(0.1606);
+    }
+    to {
+      transform: translate(57.29195vw, 100vh) scale(0.1606);
+    }
+  }
+  .money:nth-child(2) {
+    opacity: 0.0623;
+    transform: translate(38.6106vw, -10px) scale(0.3982);
+    animation: fall-2 17s -21s linear infinite;
+  }
+  @keyframes fall-2 {
+    70.443% {
+      transform: translate(37.0175vw, 70.443vh) scale(0.3982);
+    }
+    to {
+      transform: translate(37.81405vw, 100vh) scale(0.3982);
+    }
+  }
+  .money:nth-child(3) {
+    opacity: 0.7242;
+    transform: translate(18.1453vw, -10px) scale(0.9984);
+    animation: fall-3 10s -24s linear infinite;
+  }
+  @keyframes fall-3 {
+    71.78% {
+      transform: translate(22.1161vw, 71.78vh) scale(0.9984);
+    }
+    to {
+      transform: translate(20.1307vw, 100vh) scale(0.9984);
+    }
+  }
+  .money:nth-child(4) {
+    opacity: 0.6578;
+    transform: translate(78.6562vw, -10px) scale(0.6578);
+    animation: fall-4 20s -28s linear infinite;
+  }
+  @keyframes fall-4 {
+    60.825% {
+      transform: translate(78.6562vw, 60.825vh) scale(0.6578);
+    }
+    to {
+      transform: translate(78.6562vw, 100vh) scale(0.6578);
+    }
+  }
+  .money:nth-child(5) {
+    opacity: 0.6578;
+    transform: translate(78.6562vw, -10px) scale(0.6578);
+    animation: fall-5 20s -28s linear infinite;
+  }
+  @keyframes fall-5 {
+    60.825% {
+      transform: translate(78.6562vw, 60.825vh) scale(0.6578);
+    }
+    to {
+      transform: translate(78.6562vw, 100vh) scale(0.6578);
+    }
+  }
+  .money:nth-child(6) {
+    opacity: 0.6578;
+    transform: translate(78.6562vw, -10px) scale(0.6578);
+    animation: fall-6 20s -28s linear infinite;
+  }
+  @keyframes fall-6 {
+    60.825% {
+      transform: translate(78.6562vw, 60.825vh) scale(0.6578);
+    }
+    to {
+      transform: translate(78.6562vw, 100vh) scale(0.6578);
+    }
+  }
+  .money:nth-child(7) {
+    opacity: 0.6578;
+    transform: translate(78.6562vw, -10px) scale(0.6578);
+    animation: fall-7 20s -28s linear infinite;
+  }
+  @keyframes fall-7 {
+    60.825% {
+      transform: translate(78.6562vw, 60.825vh) scale(0.6578);
+    }
+    to {
+      transform: translate(78.6562vw, 100vh) scale(0.6578);
+    }
+  
+}
+}
