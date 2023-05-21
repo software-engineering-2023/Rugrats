@@ -16,24 +16,6 @@ h1 {
   height: 100vh;
 }
 
-.top {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px;
-}
-
-.top img {
-  height: 50px;
-  margin-right: auto;
-}
-
-.bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .box-wrap {
   margin: 0 10px;
   padding: 20px;
