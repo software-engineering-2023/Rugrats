@@ -1,11 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-color: #fcffe5c6;
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f7f2;
 }
 
-.button {
+.logo {
+  max-height: 70px;
+}
+
+button {
   width: 100%;
   padding: 10px;
   background-color: #4caf50;
@@ -16,7 +20,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.button:hover {
+button:hover {
   background-color: #3e8e41;
 }
 
