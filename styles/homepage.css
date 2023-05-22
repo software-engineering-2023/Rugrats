@@ -46,3 +46,7 @@
   color: #ffffff;
   background-color: #4caf50;
 }
+
+.quick-link-button {
+  border-radius: 60%;
+}
