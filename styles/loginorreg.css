@@ -17,7 +17,7 @@ h1 {
   margin: 0 10px;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(229, 231, 220, 0.1);
+  box-shadow: 0 0 10px rgb(248, 248, 248);
   width: 40%;
   display: block;
   margin: auto;
@@ -27,45 +27,45 @@ h1 {
   margin: 0 0 20px;
   font-size: 24px;
   font-weight: 500;
-  color: #333;
+  color: #ffffff;
   text-align: center;
 }
 
 .box-wrap label {
   display: block;
   margin-bottom: 5px;
-  color: #333;
+  color: #ffffff;
 }
 
 .box-wrap input {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: none;
+  border:white;
   border-radius: 5px;
-  box-shadow: 0 1px 4px rgba(241, 243, 207, 0);
+  box-shadow: 0 1px 4px rgb(255, 255, 255);
 }
 
 .box-wrap button[type="submit"] {
   width: 100%;
   padding: 10px;
   background-color: #4caf50;
-  color: #fff;
-  border: none;
+  color: #003087;
+  border: black;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .box-wrap button[type="submit"]:hover {
-  background-color: #3e8e41;
+  background-color: #ffffff;
 }
 
 .box-wrap p {
   font-size: 12px;
   margin-top: 15px;
   text-align: center;
-  color: #333;
+  color: #fefefe;
 }
 
 .box-wrap a {
@@ -73,5 +73,5 @@ h1 {
 }
 
 .box-wrap a:hover {
-  color: #3e8e41;
+  color: #ffffff;
 }

@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #f9f7f2;
+  background-color: #003087;
 }
 
 .logo {
@@ -21,14 +21,14 @@ button {
 }
 
 button:hover {
-  background-color: #3e8e41;
+  background-color: #ffffff;
 }
 
 .p {
   font-size: 12px;
   margin-top: 15px;
   text-align: center;
-  color: #333;
+  color: #fff;
 }
 
 .a {
@@ -36,5 +36,5 @@ button:hover {
 }
 
 .a:hover {
-  color: #3e8e41;
+  color: #ffffff;
 }
