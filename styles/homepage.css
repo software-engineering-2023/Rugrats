@@ -1,0 +1,154 @@
+.dropdown-toggle:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.dropdown-menu {
+  background-color: #169bd7;
+  /* Set the desired background color for the dropdown list */
+  border-radius: 0;
+  left: -12px;
+  right: auto;
+  border: none;
+  box-shadow: none;
+}
+
+.logout-btn {
+  position: relative;
+  left: -15px;
+  /* Adjust the left position value to your desired amount */
+}
+
+.hello-text {
+  color: rgb(228, 228, 234);
+  /* Set the desired color for the text */
+  position: relative;
+  left: -15px;
+  /* Adjust the left position value to your desired amount */
+}
+
+.navbar-nav .dropdown-menu {
+  margin-top: 0;
+}
+
+.dropdown-menu {
+  min-width: auto;
+}
+
+.dropdown-menu .dropdown-item:last-child {
+  margin-bottom: -8px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+  background-color: #222d65;
+}
+
+.navbar-expand-lg .navbar-toggler:hover,
+.navbar-expand-lg .navbar-toggler:focus {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-expand-lg .navbar-toggler {
+  border-color: transparent;
+}
+
+.quick-links-card {
+  position: absolute;
+  top: 260px;
+  /* Adjust the top position as needed */
+  right: 70px;
+  /* Adjust the right position as needed */
+  z-index: 9999;
+  /* Ensure the card appears above other elements */
+}
+
+.quick-links-card .card {
+  width: 280px;
+  /* Adjust the width of the card as needed */
+  border: none;
+  /* Remove the border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add a subtle box shadow */
+}
+
+.quick-links-card .card-header {
+  background-color: #222d65;
+  /* Set the background color for the card header */
+  color: white;
+  /* Set the text color for the card header */
+  font-weight: bold;
+  /* Set the font weight for the card header */
+  padding: 10px;
+  /* Add padding to the card header */
+}
+
+.quick-links-card .card-body {
+  padding: 0;
+  /* Remove padding from the card body */
+}
+
+.quick-links-card .quick-links-list {
+  list-style: none;
+  /* Remove the bullet points */
+  padding: 0;
+  /* Remove padding from the list */
+  margin: 0;
+  /* Remove margin from the list */
+}
+
+.quick-links-card .quick-links-list li {
+  border-bottom: 1px solid #ccc;
+  /* Add a fine line between each link */
+}
+
+.quick-links-card .quick-links-list li:last-child {
+  border-bottom: none;
+  /* Remove the line for the last link */
+}
+
+.quick-links-card .quick-links-list li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #222d65;
+  /* Set the link color */
+}
+
+.quick-links-card .quick-links-list li a:hover {
+  background-color: #f1f1f1;
+  /* Set the background color on hover */
+}
+
+.quick-links-card {
+  display: inline-block;
+}
+
+.container {
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+#currency-widget {
+  position: absolute;
+  bottom: -48px;
+  right: 70px;
+}
+
+body {
+  overflow: auto;
+}
+
+#header {
+  overflow: auto;
+}
+
+.card {
+  height: fit-content;
+}

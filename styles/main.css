@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 1) 5%,
+      rgba(217, 231, 255, 0.9360994397759104) 41%,
+      rgba(189, 225, 255, 0.510329131652661) 100%);
+}
+
+.logo {
+  max-height: 70px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0d7baa;
+}
+
+.p {
+  font-size: 12px;
+  margin-top: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.a:hover {
+  color: #009cde;
+}
+
+#services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

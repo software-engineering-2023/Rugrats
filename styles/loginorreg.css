@@ -1,0 +1,82 @@
+body {
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+body {
+  background-color: #f3f4f7;
+}
+
+.box-wrap {
+  margin: 0 15px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(248, 260, 248);
+  width: 40%;
+  display: block;
+  margin: auto;
+}
+
+.box-wrap h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #050505;
+  text-align: center;
+}
+
+.box-wrap label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.box-wrap input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: rgb(5, 5, 5);
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgb(149, 147, 147);
+}
+
+.box-wrap button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #0883c1;
+  color: #000000;
+  border: black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.box-wrap button[type="submit"]:hover {
+  background-color: #ffffff;
+}
+
+.box-wrap p {
+  font-size: 12px;
+  margin-top: 15px;
+  text-align: center;
+  color: #1f1e1e;
+}
+
+.box-wrap a {
+  color: #0883c1;
+}
+
+.box-wrap a:hover {
+  color: #000000;
+}

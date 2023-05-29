@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/homepage.css" />
+  <link rel="stylesheet" href="styles/transfer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <title>Payment to Others</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-light" style="background-color: #222d65">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="resources/logo-no-background.png" alt="Logo" class="logo" style="margin-right: 10px" />
+        </a>
+        <div>
+          <span class="hello-text" style="font-weight: normal;">Hello, John Doe</span>
+          <a href="index.html" class="logout-btn">
+            <i class="fa-regular fa-arrow-right-from-bracket" style="color: #d4e3fe"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #169bd7">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="homepage.html"><i class="fa-sharp fa-solid fa-house" style="color: #ffffff"></i>
+                <span style="color: white; font-weight: normal;">Home</span>
+                <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="MoneyTransfersDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa-solid fa-right-left" style="color: #ffffff"></i>
+                <span style="color: white; font-weight: normal;">Money Transfers</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="MoneyTransfersDropdown">
+                <a class="dropdown-item" id="t1" href="transfer.html" style="color: white; font-weight: normal;">Payment
+                  to Others</a>
+                <a class="dropdown-item" href="creditCardPayment.html" style="color: white; font-weight: normal;">Pay
+                  Your
+                  Credit Card</a>
+                <a class="dropdown-item" href="bills.html" style="color: white; font-weight: normal;">Pay Your
+                  Bills</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="historicalStatementsDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-file-alt" style="color: #ffffff"></i>
+                <span style="color: white; font-weight: normal;">Historical Statements</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="moneyTransfersDropdown">
+                <a class="dropdown-item" href="accountTransactions.html" style="color: white; font-weight: normal;">View
+                  Account Transactions</a>
+                <a class="dropdown-item" href="creditTransactions.html" style="color: white; font-weight: normal;">View
+                  Credit
+                  Card Transactions</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="requestsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fa-regular fa-pen-to-square" style="color: #ffffff"></i>
+                <span style="color: white; font-weight: normal;">Requests</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="requestsDropdownLabel">
+                <!-- Requests dropdown content -->
+                <a class="dropdown-item" href="UserApplyPersonalLoan.html"
+                  style="color: white; font-weight: normal;">Apply
+                  for a Personal Loan</a>
+                <a class="dropdown-item" href="UserApplyCarLoan.html" style="color: white; font-weight: normal;">Apply
+                  for
+                  a
+                  Car Loan</a>
+                <a class="dropdown-item" href="UserApplyCredCard.html" style="color: white; font-weight: normal;">Apply
+                  for a
+                  Credit Card</a>
+
+                <a class="dropdown-item" href="UserViewPoints.html" style="color: white; font-weight: normal;">View
+                  Credit
+                  Card Points and Redeem for Cash-back</a>
+                <a class="dropdown-item" href="UserSetReminder.html" style="color: white; font-weight: normal;">Set a
+                  Reminder for
+                  Payments</a>
+                <a class="dropdown-item" href="reportTechIssue.html" style="color: white; font-weight: normal;">Report
+                  Technical Issue</a>
+                <a class="dropdown-item" href="stolenorbrokencredcard.html"
+                  style="color: white; font-weight: normal;">Report Stolen/Lost/Damaged
+                  Credit
+                  Card</a>
+                <a class="dropdown-item" href="UserApplyCredCard.html" style="color: white; font-weight: normal;">Apply
+                  for Credit Card
+                  Replacement</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="applyForProductsDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                aria-labelledby="applyForProductsDropdownLabel">
+                <i class="fas fa-money-check" style="color: #ffffff"></i>
+                <span style="color: white; font-weight: normal;">Apply for Products</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="applyForProductsDropdownLabel">
+                <!-- Apply for Products dropdown content -->
+                <a class="dropdown-item" href="openAccount.html" style="color: white; font-weight: normal;">Open New
+                  Account</a>
+                <a class="dropdown-item" href="closeAccount.html" style="color: white; font-weight: normal;">Close
+                  Existing Account</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1 style="
+          font-size: 24px;
+          color: #222d65;
+          font-weight: normal;
+          margin-top: 40px;
+          margin-left: 60px;
+        ">
+      <i class="fa-solid fa-right-left" style="color: #222d65"></i> Payemnt to Others
+    </h1>
+
+    <div class="dropdown" id="my-dropdown">
+      <div class="centered-button-container">
+        <button class="btn btn-secondary dropdown-toggle custom-button" type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #169bd7;">
+          <i class="fas fa-plus-circle" style="color: #ffffff;"></i>
+          <span style="color: white;">Add Beneficiary</span>
+        </button>
+      </div>
+      <!-- Button trigger modal -->
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#bankyBankModal"
+          style="color: white;">BankyBank Account</a>
+        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#domesticModal"
+          style="color: white;">Domestic Account</a>
+        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#internationalModal"
+          style="color: white;">International Account</a>
+      </div>
+    </div>
+  </header>
+  <!-- BankyBank Modal -->
+  <div class="modal fade" id="bankyBankModal" tabindex="-1" role="dialog" aria-labelledby="bankyBankModal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #169bd7; color: white;">
+          <h5 class="modal-title" id="bankyBankModalTitle">BankyBank Beneficiary Details</h5>
+          <div id="custom-close-container">
+            <button id="closeButton" type="button" class="close" data-dismiss="modal" aria-label="Close"
+              style="background: transparent;" onclick="clearFormFields(event)">
+              <span aria-hidden="true" style="font-size: 2em; color: white;">&times;</span>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="beneficiaryName">Beneficiary Name</label>
+                <input type="text" class="form-control" id="beneficiaryName" placeholder="e.g. Mark Otto" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid name.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="beneficiaryAccount">Beneficiary Account Number</label>
+                <input type="text" class="form-control" id="beneficiaryAccount" placeholder="e.g 0112345678" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid account number.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="validationCustomOTP">OTP Token</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="validationCustomOTP" placeholder="OTP token" maxlength="6"
+                    required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Please enter a valid 6-digit OTP token.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="validateForm()"
+            style="background-color: #169bd7;">SAVE</button>
+          <button id="cancelButton" type="button" class="btn btn-secondary" data-dismiss="modal"
+            style="background-color: white; border-color: #169bd7; color: #169bd7;">CANCEL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Domestic Modal -->
+  <div class="modal fade" id="domesticModal" tabindex="-1" role="dialog" aria-labelledby="domesticModal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #169bd7;">
+          <h5 class="modal-title" id="domesticModalTitle" style="color: white;">Domestic Beneficiary Details</h5>
+          <div id="custom-close-container">
+            <button id="closeButton1" type="button" class="close" data-dismiss="modal" aria-label="Close"
+              style="background: transparent;" onclick="clearFormFields1(event)">
+              <span aria-hidden="true" style="font-size: 2em; color: white;">&times;</span>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="beneficiaryName">Beneficiary Name</label>
+                <input type="text" class="form-control" id="beneficiaryName1" placeholder="e.g. Mark Otto" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid name.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="beneficiaryAccount">Beneficiary Account Number</label>
+                <input type="text" class="form-control" id="beneficiaryAccount1" placeholder="e.g 0112345678"
+                  pattern="[0-9]+" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid account number.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="beneficiaryAddress">Beneficiary Address</label>
+                <input type="text" class="form-control" id="beneficiaryAddress1" placeholder="e.g 683 2nd Avenue"
+                  required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid address.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="beneficiaryCity">Beneficiary City</label>
+                <input type="text" class="form-control" id="beneficiaryCity1" placeholder="e.g. Los Angeles" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="beneficiaryState">Beneficiary State</label>
+                <input type="text" class="form-control" id="beneficiaryState1" placeholder="e.g. California" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <hr size="3">
+              <div class="col-md-12 mb-3">
+                <label for="bankCity">Branch City</label>
+                <input type="text" class="form-control" id="bankCity1" placeholder="e.g. Los Angeles" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="bankState">Branch State</label>
+                <input type="text" class="form-control" id="bankState1" placeholder="e.g. California" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="validationCustomCode1">Bank Code (Swift Code, FEDWIRE, Sort Code, BLZ, BSB)</label>
+                <input type="text" class="form-control" id="validationCustomCode1" placeholder="Bank code"
+                  minlength="11" maxlength="11" required>
+                <label for="validationCustomCode1">Add zeros in the beginning if less than 11 characters</label>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter an 11-digit Alphanumeric code.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="validationCustomOTP1">OTP Token</label>
+                <input type="text" class="form-control" id="validationCustomOTP1" placeholder="OTP token"
+                  pattern="\d{6}" maxlength="6" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a 6-digit OTP token.
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck1" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="validateFormDomestic()"
+            style="background-color: #169bd7;">SAVE</button>
+          <button id="cancelButton1" type="button" class="btn btn-secondary" data-dismiss="modal"
+            style="background-color: white; border-color: #169bd7; color: #169bd7;">CANCEL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- International Modal -->
+  <div class="modal fade" id="internationalModal" tabindex="-1" role="dialog" aria-labelledby="internationalModal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #169bd7;">
+          <h5 class="modal-title" id="internationalModalTitle" style="color: white;">International Beneficiary Details
+          </h5>
+          <div id="custom-close-container">
+            <button id="closeButton2" type="button" class="close" data-dismiss="modal" aria-label="Close"
+              style="background: transparent;" onclick="resetFormDInternational(event)">
+              <span aria-hidden="true" style="font-size: 2em; color: white;">&times;</span>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="beneficiaryName">Beneficiary Name</label>
+                <input type="text" class="form-control" id="beneficiaryName2" placeholder="e.g. Mark Otto" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid name.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="beneficiaryAccount">Beneficiary Account Number</label>
+                <input type="text" class="form-control" id="beneficiaryAccount2" placeholder="e.g 0112345678"
+                  pattern="[0-9]+" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid account number.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="beneficiaryAddress">Beneficiary Address</label>
+                <input type="text" class="form-control" id="beneficiaryAddress2" placeholder="e.g 683 2nd Avenue"
+                  required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid address.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="beneficiaryCity">Beneficiary City</label>
+                <input type="text" class="form-control" id="beneficiaryCity2" placeholder="e.g. Los Angeles" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="beneficiaryState">Beneficiary State</label>
+                <input type="text" class="form-control" id="beneficiaryState2" placeholder="e.g. California" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <hr size="3">
+              <div class="col-md-12 mb-3">
+                <label for="bankCountry">Bank Country</label>
+                <select class="form-select" aria-label="Default select example" id="bankCountry2" required>
+                  <option value="">Select Bank Country</option>
+                  <option value="USA">USA</option>
+                  <option value="UK">UK</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Australia">Australia</option>
+                </select>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please select a bank country.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="bankName">Bank Name</label>
+                <input type="text" class="form-control" id="bankName2" placeholder="e.g. Chase Bank" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid bank name.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="bankBranch">Bank Branch</label>
+                <input type="text" class="form-control" id="bankBranch2" placeholder="e.g. New York Branch" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid bank branch.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="bankAddress">Bank Address</label>
+                <input type="text" class="form-control" id="bankAddress2" placeholder="e.g. 123 Main St" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid bank address.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="bankCity">Bank City</label>
+                <input type="text" class="form-control" id="bankCity2" placeholder="e.g. New York" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please provide a valid bank city.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="bankState">Bank State</label>
+                <input type="text" class="form-control" id="bankState2" placeholder="e.g. New York" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please provide a valid bank state.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="validationCustomCode2">Bank Code (Swift Code, FEDWIRE, Sort Code, BLZ, BSB)</label>
+                <input type="text" class="form-control" id="validationCustomCode2" placeholder="Bank code"
+                  minlength="11" maxlength="11" required>
+                <label for="validationCustomCode2">Add zeros in the beginning if less than 11 characters</label>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter an 11-digit Alphanumeric code.
+                </div>
+              </div>
+              <div class="col-md-12 mb-3">
+                <label for="validationCustomOTP2">OTP Token</label>
+                <input type="text" class="form-control" id="validationCustomOTP2" placeholder="OTP token"
+                  pattern="\d{6}" maxlength="6" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a 6-digit OTP token.
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="validateFormInternational()"
+            style="background-color: #169bd7;">SAVE</button>
+          <button id="cancelButton2" type="button" class="btn btn-secondary" data-dismiss="modal"
+            style="background-color: white; border-color: #169bd7; color: #169bd7;">CANCEL</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="myCollapsibleContainer">
+    <button type="button" class="myCollapsible" id="myCollapsible">
+      Aya Abdelaal
+      <span class="additional-text">Another BankyBank Account</span>
+    </button>
+    <div id="myContent" style="background-color: transparent;">
+      <p>
+      <form class="form-inline">
+        <br>
+        <div class="form-group">
+          <select class="custom-select" required>
+            <option value="">Select sending account</option>
+            <option value="1">Current Account: 3121234079 (Balance = $2,991.64)</option>
+            <option value="2">Credit Account: 0405171001 (Balance = $1,287.93)</option>
+          </select>
+          <div class="invalid-feedback">Invalid select</div>
+        </div>
+        <br>
+        <br>
+        <div class="form-group">
+          <label for="transferAmount2">Transfer Amount</label>
+          <input type="number" name="transferAmount" id="transferAmount2" step="0.01" min="0" required> USD
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+          style="width: 100px; padding: 6px 12px; font-size: 14px; color: white; background-color: #222d65;">
+          Transfer
+        </button>
+      </form>
+      </p>
+    </div>
+  </div>
+
+
+
+  <div id="myCollapsibleContainer">
+    <button type="button" class="myCollapsible" id="myCollapsible">
+      Bahij Al-Bakri
+      <span class="additional-text">International Account</span>
+    </button>
+    <div id="myContent" style="background-color: transparent;">
+      <p>
+      <form class="form-inline">
+        <br>
+        <div class="form-group">
+          <select class="custom-select" required>
+            <option value="">Select sending account</option>
+            <option value="1">Current Account: 3121234079 (Balance = $2,991.64)</option>
+            <option value="2">Credit Account: 0405171001 (Balance = $1,287.93)</option>>
+          </select>
+          <div class="invalid-feedback">Invalid select</div>
+        </div>
+        <br>
+        <br>
+        <div class="form-group">
+          <label for="transferAmount2">Transfer Amount</label>
+          <input type="number" name="transferAmount" id="transferAmount2" step="0.01" min="0" required> USD
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+          style="width: 100px; padding: 6px 12px; font-size: 14px; color: white; background-color: #222d65;">
+          Transfer
+        </button>
+      </form>
+      </p>
+    </div>
+  </div>
+
+  <div id="myCollapsibleContainer">
+    <button type="button" class="myCollapsible" id="myCollapsible">
+      Mireille Bishay
+      <span class="additional-text">Domestic Account</span>
+    </button>
+    <div id="myContent" style="background-color: transparent;">
+      <p>
+      <form class="form-inline">
+        <br>
+        <div class="form-group">
+          <select class="custom-select" required>
+            <option value="">Select sending account</option>
+            <option value="1">Current Account: 3121234079 (Balance = $2,991.64)</option>
+            <option value="2">Credit Account: 0405171001 (Balance = $1,287.93)</option>
+          </select>
+          <div class="invalid-feedback">Invalid select</div>
+        </div>
+        <br>
+        <br>
+        <div class="form-group">
+          <label for="transferAmount2">Transfer Amount</label>
+          <input type="number" name="transferAmount" id="transferAmount2" step="0.01" min="0" required> USD
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+          style="width: 100px; padding: 6px 12px; font-size: 14px; color: white; background-color: #222d65;">
+          Transfer
+        </button>
+      </form>
+      </p>
+    </div>
+  </div>
+
+
+  </header>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="js/transfer.js"></script>
+</body>
+
+</html>

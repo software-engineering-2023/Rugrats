@@ -1,0 +1,53 @@
+.transContainer {
+  background-color: #003087;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  color: white;
+  border-radius: 10px;
+}
+
+#transInput,
+#transOutput {
+  width: 80%;
+  margin: 1.2rem auto;
+}
+
+* #nav-bar {
+  position: relative;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  background-color: #003087;
+}
+
+#navbarSupportedContent {
+  position: absolute;
+  right: 10px;
+}
+
+.navbar-nav li {
+  padding: 0 10 px;
+}
+
+.navbar-nav li a {
+  color: #fff !important;
+  font-weight: 600;
+  float: right;
+  text-align: left;
+}
+
+.navbar-nav li a:hover {
+  color: #009cde !important;
+}
+
+.fa-bars {
+  color: #fff;
+  font-size: 30px !important;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
